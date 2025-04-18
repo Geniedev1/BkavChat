@@ -57,7 +57,6 @@ export const Register =() => {
                          <button className = "mx-2  py-2 px-6 rounded-lg ring-1 ring-slate-200">
                            icon
                          </button>
-                         
                       </div>
                  </div>
          </div>
