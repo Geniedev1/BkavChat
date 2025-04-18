@@ -1,5 +1,8 @@
 import {Link} from 'react-router-dom'
+<<<<<<< HEAD
 import {useState, useEffect} from 'react'
+=======
+>>>>>>> main
 export const Login =() => {
    return (
    <>
