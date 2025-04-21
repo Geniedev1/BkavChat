@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 export const Login =() => {
    return (
    <>
-   <div className = "flex justify-between p-[3rem] w-full h-screen bg-slate-50 ">
+   <div className = "flex justify-between p-[3rem] w-screen h-screen bg-slate-50 ">
         <div className = "flex flex-col justify-center m-[1rem] w-[40%] ">
                 <div className = "flex h-1/4">
                         <div className = "flex items-center justify-center w-1/4">
@@ -18,7 +18,7 @@ export const Login =() => {
                 </div>
         </div>
         <div className = "flex flex-col justify-between h-full w-[40%]">
-                <ul className = "flex justify-between  mx-[6rem] 1/6  ">
+                <ul className = "flex justify-between  mx-[6rem] h-1/12  ">
                         <li className = "btn" >Tiếng việt</li>
                         <li className="btn">Đăng nhập</li>
                         <li className  = "btn"><Link to = "/Register">Đăng ký</Link></li>
