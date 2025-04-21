@@ -1,21 +1,10 @@
 import {Link} from 'react-router-dom'
+import {BkavIcon} from '../Component/BkavIcon'      
 export const Register =() => {
     return (
     <>
     <div className = "flex justify-between p-[3rem] w-full h-screen bg-slate-50 ">
-         <div className = "hidden md:flex md:flex-col md:justify-center md:m-[1rem] md:w-[40%]  ">
-                 <div className = "flex h-1/4">
-                         <div className = "flex items-center justify-center w-1/4">
-                                 <img src = "./images/IconB.png" alt = "logo" className = "object-cover"/>
-                         </div>
-                         <div className = "flex items-center text-center">
-                                 <h1 className = "  text-orange-500 text-[2rem] font-bold">Bkav Chat</h1>
-                         </div>
-                 </div>
-                 <div className = "p-10 mt-[2rem] w-full">
-                         <img src ="./images/Register.png" alt ="Not found" className = " object-contain w-3/4 h-3/4"/>
-                 </div>
-         </div>
+        <BkavIcon/>
          <div className = "flex flex-col justify-between h-full md:w-[60%] w-full">
                 <div className = "flex justify-center h-1/12 " >
                         <div className = "grid grid-cols-[30%_70%] w-2/3 gap-4">

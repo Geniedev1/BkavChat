@@ -1,26 +1,15 @@
 import {Link} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react' 
+import {BkavIcon} from '../Component/BkavIcon'      
 export const Login =() => {
    return (
    <>
-   <div className = "flex justify-between p-[3rem] w-screen h-screen bg-slate-50 ">
-        <div className = "flex flex-col justify-center m-[1rem] w-[40%] ">
-                <div className = "flex h-1/4">
-                        <div className = "flex items-center justify-center w-1/4">
-                                <img src = "./images/IconB.png" alt = "logo" className = "object-cover"/>
-                        </div>
-                        <div className = "flex items-center text-center">
-                                <h1 className = "  text-orange-500 text-[2rem] font-bold">Bkav Chat</h1>
-                        </div>
-                </div>
-                <div className = "p-10 mt-[2rem] w-full">
-                        <img src ="./images/login.png" alt ="Not found" className = " object-contain w-3/4 h-3/4"/>
-                </div>
-        </div>
-        <div className = "flex flex-col justify-between h-full w-[40%]">
+   <div className = "flex justify-between p-[3rem] w-full h-screen bg-slate-50 ">
+        <BkavIcon/>
+        <div className = "flex flex-col justify-between h-full md:w-[40%] w-full">
                 <ul className = "flex justify-between  mx-[6rem] h-1/12  ">
                         <li className = "btn" >Tiếng việt</li>
-                        <li className="btn">Đăng nhập</li>
+                        <li className = "btn"><Link to = "/Login">Đăng nhập</Link></li>
                         <li className  = "btn"><Link to = "/Register">Đăng ký</Link></li>
                 </ul>
                 <form className = "flex flex-col justify-start h-4/6  mt-12">
