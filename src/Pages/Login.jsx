@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom'
 import {useState, useEffect} from 'react' 
 import {BkavIcon} from '../Component/Login/BkavIcon' 
-import { Navigate }  from 'react-router-dom'
 import axios from 'axios'   
 import {showToast} from '../Component/Login/Showtoast'  
 export const Login =() => {
