@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {BkavIcon} from '../Component/BkavIcon'      
+import {BkavIcon} from '../Component/Login/BkavIcon'      
 export const Register =() => {
     return (
     <>
@@ -18,13 +18,13 @@ export const Register =() => {
                  <div className = "flex  justify-center items-start  h-5/6  mt-2 ">
                         <form className = "grid grid-cols-[30%_70%] grid-rows-7 w-2/3 gap-4">
                                 <h3 className = " text-start text-[1.6rem] font-[300] col-start-2 row-start-1 row-span-2 ">Đăng ký</h3>
-                                <div className = "flex items-center justify-start col-start-1 row-start-2">
+                                <div className = "flex items-center justify-start col-start-1 row-start-2 max-h-[60px]">
                                      <h4 className = "text-start text-[0.8rem] ">Tên tài khoản</h4>    
                                 </div>
                                 <input
                                 type = "text"
                                 placeholder = "Tên tài khoản/Email"
-                                className = "rounded-lg ring-2 ring-sky-50 p-2  bg-sky-100 focus:ring-4 focus:ring-sky-200 col-start-2 row-start-2"
+                                className = "rounded-lg ring-2 ring-sky-50 p-0  bg-sky-100 focus:ring-4 focus:ring-sky-200 col-start-2 row-start-2 h-[60px] "
                                 />
                                 <div className = "flex items-center justify-start col-start-1 row-start-3">
                                      <h4 className = "text-start text-[0.8rem] ">Địa chỉ email</h4>    
