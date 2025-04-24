@@ -1,6 +1,6 @@
-import {Login } from "../Pages/Login";
+import {Login } from "../Pages/Auth/Login";
 import {Routes,Route} from "react-router-dom";
-import {Register} from "../Pages/Register"
+import {Register} from "../Pages/Auth/Register"
 export const Router = () => {
     return (
         <>

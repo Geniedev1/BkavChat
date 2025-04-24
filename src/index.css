@@ -36,3 +36,9 @@
     .btn:hover {
         color : rgb(61, 61, 208);
     };
+    .fade-bg {
+      
+      background: radial-gradient(circle, rgba(86, 109, 209, 0.6) 0%, rgba(158, 70, 70, 0.1) 70%, rgba(0,0,0,0) 100%);
+      
+  };
+  
