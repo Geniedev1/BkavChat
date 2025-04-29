@@ -25,11 +25,11 @@ export const Login =() => {
    
    return (
    <>
-   <Layout>
+   <Layout >
    <img src ="./images/login.png" alt ="Not found" className = " object-contain w-3/4 h-3/4"/>
    <form className = "flex flex-col justify-center h-4/6  mt-12">
-                        <h3 className = " text-center 2xl:text-[2.6rem] text-[1.5rem] font-[400]">Đăng nhập</h3> 
-                       <div className = "relative w-full flex justify-end 2xl:mt-24 mt-5 ">
+                        <h3 className = " text-center 2xl:text-[3rem] text-[1.5rem] font-[400]">Đăng nhập</h3> 
+                       <div className = "relative w-full  flex justify-end 2xl:mt-10 mt-5 ">
                        <input
                         name = "email"
                         value = {user.email}
@@ -39,10 +39,10 @@ export const Login =() => {
                         className = "rounded-lg ring-2 w-full ring-sky-50 2xl:p-6 p-2   bg-sky-100 focus:ring-4 focus:ring-sky-200  "
                         />
                         <ion-icon
-                          name="eye-off-outline"
+                          name="close-circle-outline"
                           class="absolute  top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none pr-4" ></ion-icon>
                        </div>
-                       <div className = "relative w-full flex justify-end 2xl:mt-24 mt-5 ">
+                       <div className = "relative w-full flex justify-end 2xl:mt-10 mt-5 ">
                        <input
                         name = "password"
                         value = {user.password}
@@ -52,11 +52,11 @@ export const Login =() => {
                         className = "rounded-lg ring-2 w-full ring-sky-50 2xl:p-6 p-2   bg-sky-100 focus:ring-4 focus:ring-sky-200  "
                         />
                         <ion-icon
-                          name="close-circle-outline"
+                          name="eye-off-outline"
                           class="absolute  top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none pr-4" ></ion-icon>
                        </div>
                         <button className = "text-end mt-4 italic 2xl:mt-8 ">quên mật khẩu?</button>
-                        <button onClick={(e)=>onLogin(e)} className = "2xl:p-6 p-2 mt-4 text-[1.2rem] 2xl:mt-8 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 shadow-lg shadow-slate-300">
+                        <button onClick={(e)=>onLogin(e)} className = "2xl:p-6 p-2 mt-4 text-[1.2rem] 2xl:mt-8 bg-[#4461F2] text-white font-bold rounded-xl hover:bg-blue-700 shadow-lg shadow-slate-300">
                         Đăng nhập  
                         </button>
                         <button  className = "text-end mt-4 italic ">bạn chưa có tài khoản, đang ký tại <a className = "text-sky-700">đây!</a></button>
@@ -68,14 +68,14 @@ export const Login =() => {
                         <div className = "h-0.5 w-32 bg-gray-200 "></div>
                      </div>
                      <div className = "flex justify-center">  
-                        <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200">
+                        <button className = "2xl:mx-4  2xl:py-4 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200 hover:shadow-slate-400 hover:shadow-lg hover:bg-white hover:ring-slate-50">
                         <img src="./images/Fa.png" alt="" className =" w-6 h-6 object-contain" />
                         </button>
-                        <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg shadow-slate-400 shadow-lg">
+                        <button className = "2xl:mx-4  2xl:py-4 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200 hover:shadow-slate-400 hover:shadow-lg hover:bg-white hover:ring-slate-50">
                         <img src="./images/Apple.png" alt="" className =" w-6 h-6 object-contain mb-1" />
                         </button>
-                        <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200">
-                          <img src="./images/Go2.png" alt="" className =" w-6 h-6 object-contain" />
+                        <button className = "2xl:mx-4  2xl:py-4 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200 hover:shadow-slate-400 hover:shadow-lg hover:bg-white hover:ring-slate-50">
+                          <img src="./images/Go2.png" alt="" className =" w-8 h-8 object-contain" />
                         </button>  
                      </div>
                 </div>
