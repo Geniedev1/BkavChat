@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'   
 import {showToast} from '../../Component/Login/Showtoast'  
 import {Layout} from './Layout'
+import {LayoutIcon} from './LayoutIcon'
 export const Login =() => {
    const [user,setUser] = useState({
         email : '',
@@ -27,23 +28,33 @@ export const Login =() => {
    <Layout>
    <img src ="./images/login.png" alt ="Not found" className = " object-contain w-3/4 h-3/4"/>
    <form className = "flex flex-col justify-center h-4/6  mt-12">
-                        <h3 className = " text-center 2xl:text-[2.6rem] text-[1.5rem] font-[400]">Đăng nhập</h3>
-                        <input
+                        <h3 className = " text-center 2xl:text-[2.6rem] text-[1.5rem] font-[400]">Đăng nhập</h3> 
+                       <div className = "relative w-full flex justify-end 2xl:mt-24 mt-5 ">
+                       <input
                         name = "email"
                         value = {user.email}
                         onChange = {(e)=>setUser({...user,[e.target.name]:e.target.value})}     
                         type = "email" 
                         placeholder = "Tên tài khoản/Email"
-                        className = "rounded-lg ring-2 ring-sky-50 2xl:p-6 p-2 2xl:mt-24 mt-5 bg-sky-100 focus:ring-4 focus:ring-sky-200  "
+                        className = "rounded-lg ring-2 w-full ring-sky-50 2xl:p-6 p-2   bg-sky-100 focus:ring-4 focus:ring-sky-200  "
                         />
-                        <input
+                        <ion-icon
+                          name="eye-off-outline"
+                          class="absolute  top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none pr-4" ></ion-icon>
+                       </div>
+                       <div className = "relative w-full flex justify-end 2xl:mt-24 mt-5 ">
+                       <input
                         name = "password"
                         value = {user.password}
-                        onChange = {(e)=>setUser({...user,[e.target.name]:e.target.value})}
-                        type = "password"
+                        onChange = {(e)=>setUser({...user,[e.target.name]:e.target.value})}     
+                        type = "password" 
                         placeholder = "Mật khẩu"
-                        className = " rounded-lg ring-2 ring-sky-50 2xl:p-6 p-2 mt-10 2xl:mt-16 bg-sky-100 focus:ring-4 focus:ring-sky-200 "
+                        className = "rounded-lg ring-2 w-full ring-sky-50 2xl:p-6 p-2   bg-sky-100 focus:ring-4 focus:ring-sky-200  "
                         />
+                        <ion-icon
+                          name="close-circle-outline"
+                          class="absolute  top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none pr-4" ></ion-icon>
+                       </div>
                         <button className = "text-end mt-4 italic 2xl:mt-8 ">quên mật khẩu?</button>
                         <button onClick={(e)=>onLogin(e)} className = "2xl:p-6 p-2 mt-4 text-[1.2rem] 2xl:mt-8 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 shadow-lg shadow-slate-300">
                         Đăng nhập  
@@ -58,13 +69,13 @@ export const Login =() => {
                      </div>
                      <div className = "flex justify-center">  
                         <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200">
-                          icon
+                        <img src="./images/Fa.png" alt="" className =" w-6 h-6 object-contain" />
                         </button>
                         <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg shadow-slate-400 shadow-lg">
-                          icon
+                        <img src="./images/Apple.png" alt="" className =" w-6 h-6 object-contain mb-1" />
                         </button>
                         <button className = "2xl:mx-4  2xl:py-6 2xl:px-12 mx-2 py-2 px-6 rounded-lg ring-1 ring-slate-200">
-                          icon
+                          <img src="./images/Go2.png" alt="" className =" w-6 h-6 object-contain" />
                         </button>  
                      </div>
                 </div>

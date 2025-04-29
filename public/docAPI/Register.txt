@@ -1,0 +1,16 @@
+REGISTER
+method : POST
+url : {{portalBaseUrl}}/user/Register
+headers : Content-Type capplication/json
+Body : {
+    "data": {
+        "user" : "user",
+        "email": "{{email}}",
+        "password": "passwd",
+        "password2" :"passwd"
+
+    }
+}
+respon : {
+   
+}

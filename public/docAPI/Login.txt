@@ -1,0 +1,14 @@
+LOGIN 
+method : POST
+url : {{portalBaseUrl}}/user/login
+headers : Content-Type capplication/json
+Body : {
+    "data": {
+        "email": "{{email}}",
+        "password": "CHANGEME"
+    }
+}
+respon : {
+    "access" : "token",
+    "refresh" : "tokenrefresh"
+}
